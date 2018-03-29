@@ -1,0 +1,10 @@
+.footer {
+    flex: 0 0 auto;
+    background-color: rgb(59,68,75);
+}
+
+.footer h4 {
+    color: rgb(251, 99, 98);
+    text-align: left;
+    padding: 20px 0 20px 40px;
+}

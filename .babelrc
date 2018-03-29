@@ -1,0 +1,15 @@
+{
+  "presets": ["es2015", "react"],
+  "env": {
+    "server": {
+        "plugins": [
+            [
+                "css-modules-transform", {
+                    "generateScopedName": "[local]",
+                    "extensions": [".css"]
+                }
+            ]
+        ]
+    }
+  }
+}

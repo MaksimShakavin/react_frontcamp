@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Post matches snapshot for components Post 1`] = `
+<article
+  className="poster"
+>
+  <h3
+    className="title"
+  >
+    React Design Principles
+  </h3>
+  <input
+    className="delete-button-post"
+    onClick={[Function]}
+    type="button"
+    value="Delete"
+  />
+  <p
+    className="description"
+  >
+    Thriller Thriller Thriller Thriller Thriller
+  </p>
+  <div
+    className="post-inform"
+  >
+    <span
+      className="data"
+    >
+      2015
+    </span>
+    <span
+      className="author"
+    >
+      Dan Abramov
+    </span>
+  </div>
+</article>
+`;

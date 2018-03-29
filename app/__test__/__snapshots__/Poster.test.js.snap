@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Poster matches snapshot for components Poster 1`] = `
+<div
+  className="poster"
+>
+  <a
+    href="/film/199951"
+    onClick={[Function]}
+  >
+    <img
+      className="imageBlock"
+      src="https://image.tmdb.org/t/p/w500/bzrTHS1JrC8BJszpqKHGX4rLnoV.jpg"
+    />
+  </a>
+  <div
+    className="film-info"
+  >
+    <div
+      className="film-inform"
+    >
+      <span>
+        Quentin Tarantino: 20 Years of Filmmaking
+      </span>
+      <span>
+        2012-11-20
+      </span>
+    </div>
+    <div>
+      <span
+        className="genre"
+      >
+        Raiting: 
+        9
+      </span>
+    </div>
+  </div>
+</div>
+`;
