@@ -7,7 +7,7 @@
     "build-dev": "webpack --config webpack.dev.js",
     "build-prod": "webpack --config webpack.prod.js",
     "start": "node ./public/server",
-    "test": "jest --no-cache",
+    "test": "jest --no-cache --coverage",
     "test:watch": "npm test -- --watch"
   },
   "author": "Maksim Shakavin",
@@ -58,6 +58,13 @@
     "webpack-node-externals": "^1.6.0"
   },
   "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": ["app/client/actions/*.{js,jsx}",
+       "app/client/components/Content/*.{js,jsx}",
+       "app/client/components/Post/*.{js,jsx}",
+       "app/client/reducers/*.{js,jsx}"
+      ],
+    "coverageReporters" : ["json", "lcov", "text"],
     "moduleNameMapper": {
       "\\.(css)$": "<rootDir>/node_modules/jest-css-modules"
     },

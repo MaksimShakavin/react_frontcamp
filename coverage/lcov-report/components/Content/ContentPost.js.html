@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for components/Content/ContentPost.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\index.html">All files</a> / <a href="index.html">components/Content</a> ContentPost.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">90% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>18/20</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>3/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">90.91% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>10/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">90% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>18/20</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+import Post from '../Post/Post';
+import {withRouter} from 'react-router-dom';
+import {connect} from 'react-redux';
+import {getPosts} from "../../actions/actions";
+import styles from'./content.css';
+ 
+&nbsp;
+// const BlogAPI = {
+//     posts: [
+//         {number: 1, title: "Ben Blocker", description: "Comedies Comedies Comedies Comedies", releaseDate: "2014", author: "Quentin Tarantino"},
+//         {number: 2, title: "Dave Defend", description: "Dramas Dramas Dramas Dramas Dramas", releaseDate: "2015", author: "Quentin Tarantino"},
+//         {number: 3, title: "Sam Sweeper", description: "Dramas Dramas Dramas Dramas Dramas Dramas", releaseDate: "2014", author: "Quentin Tarantino"},
+//         {number: 4, title: "Matt Midfiel", description: "Thriller Thriller Thriller Thriller Thriller", releaseDate: "2015", author: "Big Dealan"},
+//         {number: 5, title: "Will Winger", description: "Thriller Thriller Thriller Thriller Thriller", releaseDate: "2014", author: "Big Dealan"},
+//         {number: 6, title: "Fillipe Forw", description: "Comedies Comedies Comedies Comedies", releaseDate: "2016", author: "Big Dealan"},
+//         {number: 7, title: "William Win", description: "Thriller Thriller Thriller Thriller Thriller", releaseDate: "2017", author: "Gvinet Paltrou"},
+//         {number: 8, title: "Fil Forward", description: "Comedies Comedies Comedies Comedies", releaseDate: "2016", author: "Gvinet Paltrou"}
+//     ],
+//     all: function() { return this.posts},
+//     get: function(id) {
+//         const isPost = p =&gt; p.number === id;
+//         return this.posts.find(isPost)
+//     }
+// };
+&nbsp;
+class ContentPost extends React.Component{
+&nbsp;
+    constructor(props){
+        super(props);
+    }
+&nbsp;
+    componentDidMount(){
+        this.requestPosts();
+    }
+&nbsp;
+    requestPosts(){
+        this.props.fetchPosts();
+    }
+&nbsp;
+    sortPostsBy (sortBy, posts){
+        <span class="missing-if-branch" title="else path not taken" >E</span>if(sortBy === "releaseDate") {
+            posts.sort(function (a, b) {
+                const itemA = a.releaseDate || <span class="branch-1 cbranch-no" title="branch not covered" >'0';</span>
+                const itemB = b.releaseDate || <span class="branch-1 cbranch-no" title="branch not covered" >'0';</span>
+                return itemB.replace(/-/g, '')
+                    - itemA.replace(/-/g, '');
+            });
+        }else {
+<span class="cstat-no" title="statement not covered" >            posts.sort(<span class="fstat-no" title="function not covered" >fu</span>nction (a, b) {</span>
+<span class="cstat-no" title="statement not covered" >                return a.author.localeCompare(b.author);</span>
+            });
+        }
+        return posts;
+    }
+&nbsp;
+    render(){
+        console.log(this.props.state);
+        let posts = this.sortPostsBy(this.props.sortBy, this.props.posts);
+        return (
+            &lt;div className="content"&gt;
+                {
+                    posts.map(p =&gt; (
+                        &lt;Post info={p} key={p.id} /&gt;
+                    ))
+                }
+            &lt;/div&gt;
+        );
+    }
+}
+&nbsp;
+const mapStateToProps = function(store) {
+    return {
+        posts: store.storePosts.posts,
+        sortBy: store.storePosts.sortBy, 
+    };
+};
+&nbsp;
+const mapDispatchToProps = (dispatch) =&gt; {
+    return {
+      fetchPosts: () =&gt; {
+          dispatch(getPosts())
+      }
+  };
+}
+&nbsp;
+export default withRouter(connect(mapStateToProps,mapDispatchToProps)(ContentPost));</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed Apr 04 2018 10:06:23 GMT+0300 (RTZ 2 (зима))
+</div>
+</div>
+<script src="..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\sorter.js"></script>
+</body>
+</html>

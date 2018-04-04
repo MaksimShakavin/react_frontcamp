@@ -21,26 +21,13 @@ describe('Content', () => {
             posts: data
         });
         debugger;
-        // content = mount(
-        //     <BrowserRouter>
-        //     <Provider>
-                
-        //     </Provider>
-        // </BrowserRouter>
-        // );
         content = mount(
             <BrowserRouter>
-            <div>
-                
-            </div>
-        </BrowserRouter>
+                <Provider store={store}>
+                    <ContentPost/>
+                </Provider>
+            </BrowserRouter>
         );
-        
-    //     <BrowserRouter>
-    //     <Provider store={store}>
-    //         <ContentPost/>
-    //     </Provider>
-    // </BrowserRouter>
         console.log('content', content);
     });
     debugger;
